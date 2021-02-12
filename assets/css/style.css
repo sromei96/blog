@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  /* padding: 0px;
+  margin: 0px; */
+  background: #5c5c57;
+  font-size: 120%;
+  font-family: 'Lora', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .fa {
+  color: red;
+  background: #5F9EA0;
+
+}
+.fa .fa-user {
+  color: red;
+  background: #5F9EA0;
+
+} */
+
+header {
+
+  width: 100%;
+  margin: 0px auto 0px;
+  color: white;
+  background: #333330;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+}
+.menues{
+
+  display: flex;
+
+
+  justify-content: space-between;
+}
+.user_info{
+
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  overflow: hidden;
+  transition: 0.4s;
+
+}
+.user_info:hover{
+
+  /* background: red; */
+  overflow:visible;
+  text-align: center;
+  /* height: 120px; */
+}
+.user_info_login{
+
+
+  /* display: flex;
+  flex-direction: column; */
+  height: 50px;
+  overflow: hidden;
+  transition: 0.4s;
+
+}
+.user_info_login ul{
+
+
+  list-style: none;
+
+}
+.user-name{
+
+
+}
+.user-name:hover{
+
+}
+.user_info ul{
+  text-align: left;
+  background: #333330;
+  list-style : none;
+
+
+}
+.footer {
+  color: #d3d3d3;
+  background: #303036;
+  height: 400px;
+  position: relative;
+}
+
+.footer .footer-content {
+  border: 1px solid red;
+  height: 350px;
+
+}
+.footer .links ul{
+
+  list-style: none;
+}
+.footer .links li{
+
+  margin: 10px 10px;
+}
+
+.singleBody{
+
+  background: white;
+
+}
+.post-title{
+  text-align: center;
+}
+.post-content img{
+
+  width: 50%;
+  margin: 0 25%;
+}
+
+.footer .footer-bottom {
+  color: #686868;
+  background: #343a40;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+.nav {
+
+
+
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  background-color: #333330;
+}
+
+.option {
+  float: left;
+
+}
+
+.option .one {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.option .one:hover {
+  background-color: #111111;
+}
+
+/* TODO: Option login  */
+.option_login {
+  top: -10px;
+  float: right;
+
+}
+
+.option_login .one {
+  /* display: block; */
+  color: white;
+  text-align: center;
+  padding: -10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.option_login .one:hover {
+  background-color: #111111;
+}
+
+
+.link {
+  text-color: blue;
+}
+.logo-text {
+  text-align: center;
+  text-shadow: #111111;
+}
+
+.content {
+  margin: 0px auto;
+  padding: 20px;
+  width: 50%;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 10px 0px 10px 0px;
+}
+
+.input-group {
+  margin: 10px 10px 10px 10px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+
+}
+.input-group input {
+  height: 80px;
+  width: 40%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  color: white;
+  background: #5F9EA0;
+}
+
+.btn .btn-big:hover {
+
+}
+
+.error {
+  text-decoration: none;
+  list-style: none;
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: center;
+
+}
+.success {
+  list-style: none;
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.auth-content {
+  width: 100%;
+}
+.page-wrapper {
+    /* float: right;
+    width: 100%; */
+    background: #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.page-wrapper .post-slider{
+    /* float: right; */
+    width: 20%;
+    border: 1px solid black;
+
+}
+.page-wrapper .post-slider h1{
+    font-size:25px;
+    text-align: center;
+}
+.page-wrapper .post-slider
+.post-wrapper{
+    /* font-size:30px; */
+    /* display: flex; */
+    text-align: center;
+    color: #5c5b5b;
+    font-size: 12px;
+
+}
+.page-wrapper .post-slider .post-wrapper
+.slider-image{
+  width: 225px;
+  height: 150px;
+}
+
+.page-wrapper .content-clearfix{
+  text-align: left;
+  width: 60%;
+  border: 1px solid black;
+
+}
+.page-wrapper .content-clearfix .main-content{
+  padding-left: 10px;
+
+}
+.page-wrapper .content-clearfix .main-content
+h1{
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.page-wrapper .content-clearfix .main-content .post-clearfix{
+
+
+}
+.page-wrapper .content-clearfix .main-content .post-clearfix
+.post-image{
+  width: 450px;
+  height: 300px;
+
+}
+.page-wrapper .content-clearfix .main-content .post-clearfix
+.post-preview{
+
+
+}
+.page-wrapper .content-clearfix .main-content .post-clearfix
+.post-preview .post-head{
+  color: black;
+  font-size: 25px;
+
+}
+.page-wrapper .content-clearfix .main-content .post-clearfix
+.post-preview .preview-text{
+  padding-top: 0px;
+  color: #5c5b5b;
+  font-size: 18px;
+
+}
+.page-wrapper .content-clearfix .main-content .post-clearfix
+.post-preview .post-creator{
+  color: blue;
+
+}
+.page-wrapper .content-clearfix .main-content .post-clearfix
+.post-preview .post-time{
+  color: red;
+
+
+}
+.page-wrapper .content-clearfix .main-content .post-clearfix
+.post-preview i{
+
+}
+.page-wrapper .content-clearfix .main-content .sidebar{
+
+
+
+}
+.page-wrapper .content-clearfix .main-content.sidebar
+.section-search{
+  padding-left: 20px;
+
+}
+.page-wrapper .content-clearfix .main-content.sidebar
+.section-topics{
+
+  text-align: center;
+
+}
+.page-wrapper .sidebar{
+  /* float: left; */
+  width: 20%;
+  border: 1px solid black;
+
+
+}
+.page-wrapper .sidebar .section-search{
+  padding: 5px;
+  padding-bottom: 5px;
+
+}
+.page-wrapper .sidebar .section-search
+.text-input{
+  width: 100%;
+  height: 40px;
+  font-size: 25px;
+
+}
+.section-title{
+  text-align: center;
+  font-size: 20px;
+
+}
+.page-wrapper .sidebar .section-topics{
+
+
+}
+.page-wrapper .sidebar .section-topics ul{
+
+  list-style: none;
+
+  text-align: center;
+
+}
+.page-wrapper .sidebar .section-topics ul li{
+
+  width: 80%;
+}
+.breaking-news{
+  width: 100%;
+  text-align: center;
+  text-color: red;
+  border: 1px solid blue;
+}
+
+.page-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
